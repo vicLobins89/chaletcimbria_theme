@@ -1,0 +1,120 @@
+/******************************************************************
+Site Name: Honey
+Author: Vic Lobins
+
+Stylesheet: Button Styles
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+
+/*********************
+BUTTON DEFAULTS
+
+Quick video guide:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+
+%btn {
+	position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+	border-radius: 6px;
+    font-size: 1.2rem;
+	font-weight: bold;
+    line-height: 1;
+    padding: 0.9rem 4rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    text-align: center;
+    clear: both;
+    outline: none;
+	@include transition(all 0.2s ease-in-out);
+	@media only screen and (max-width: 767px) {
+		padding: 1rem;
+	}
+
+	// hovering on the btn
+	&:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+	} // end hover
+
+	// clicking on the button
+	&:active {
+		top: 1px;
+	} // end active
+	
+	a {
+		color: inherit !important;
+		text-decoration: inherit !important;
+	}
+	
+	&.full {
+		width: 100%;
+	}
+	
+	&.half {
+		width: 48%;
+    	margin-right: 4%;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+} // end .button
+
+.primary-btn, a.primary-btn {
+	@extend %btn; // here we load the btn defaults
+	background-color: $orange;
+	border-color: $orange;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: $white;
+		color: $orange;
+	} // end hover// end active
+	
+	&.alt {
+		background-color: $meta-gray;
+		border-color: $meta-gray;
+		
+		&:hover,
+		&:focus {
+			background-color: $white;
+			color: $meta-gray;
+		} // end hover// end active
+	}
+}
+
+.secondary-btn, a.secondary-btn {
+	@extend %btn; // here we load the btn defaults
+	background-color: transparent;
+	border-color: $blue;
+	color: $blue;
+	font-weight: normal;
+	padding: 1rem 3rem;
+	border-width: 1px;
+
+	&:hover,
+	&:focus {
+		background-color: $orange;
+		color: $blue;
+	} // end hover// end active
+}
+
+.primary-link {
+	background: url(../images/link-arrow.png) no-repeat center left;
+	background-size: 2rem;
+	padding: .5rem 0 .5rem 2.75rem;
+	display: inline-block;
+	line-height: 1.2;
+	@include transition(color 0.2s ease-in-out);
+}
