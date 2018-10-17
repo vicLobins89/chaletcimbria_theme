@@ -127,3 +127,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	line-height: 1.2;
 	@include transition(color 0.2s ease-in-out);
 }
+
+.hover-zoom {
+	transform: scale(0.9);
+	@include transition(transform 0.3s ease-in-out);
+	
+	&:hover {
+		transform: scale(1);
+	}
+}
