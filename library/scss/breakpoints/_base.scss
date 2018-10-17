@@ -1358,7 +1358,7 @@ div#n2-ss-3-align {
 	.nextend-thumbnail-default,
 	.nextend-thumbnail-inner {
 		bottom: 1rem !important;
-		height: 100% !important;
+		height: auto !important;
 		
 		.nextend-thumbnail-scroller-group {
 			display: block !important;
@@ -1392,7 +1392,7 @@ div#n2-ss-3-align {
 		
 		.nextend-thumbnail-scroller {
 			width: 100% !important;
-			height: 100% !important;
+			height: auto !important;
 			display: inline-block !important;
 		}
 	}
