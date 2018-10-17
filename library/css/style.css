@@ -1805,7 +1805,8 @@ div#n2-ss-2-align .nextend-thumbnail-default,
 div#n2-ss-2-align .nextend-thumbnail-inner,
 div#n2-ss-3-align .nextend-thumbnail-default,
 div#n2-ss-3-align .nextend-thumbnail-inner {
-  bottom: 1rem !important; }
+  bottom: 1rem !important;
+  height: 100% !important; }
   div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,
   div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group,
   div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,
@@ -1846,6 +1847,7 @@ div#n2-ss-3-align .nextend-thumbnail-inner {
   div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller,
   div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller {
     width: 100% !important;
+    height: 100% !important;
     display: inline-block !important; }
 
 /*********************
