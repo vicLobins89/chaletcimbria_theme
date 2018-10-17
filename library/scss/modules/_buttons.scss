@@ -129,6 +129,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 }
 
 .hover-zoom {
+	display: block;
 	transform: scale(0.9);
 	@include transition(transform 0.3s ease-in-out);
 	

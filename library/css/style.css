@@ -677,6 +677,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transition: color 0.2s ease-in-out; }
 
 .hover-zoom {
+  display: block;
   transform: scale(0.9);
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out; }
