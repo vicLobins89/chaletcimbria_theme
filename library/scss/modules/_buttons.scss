@@ -128,7 +128,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	@include transition(color 0.2s ease-in-out);
 }
 
-.hover-zoom {
+.hover-anchor {
 	display: block;
 	transform: scale(0.9);
 	@include transition(transform 0.3s ease-in-out);

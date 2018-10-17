@@ -676,12 +676,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out; }
 
-.hover-zoom {
+.hover-anchor {
   display: block;
   transform: scale(0.9);
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out; }
-  .hover-zoom:hover {
+  .hover-anchor:hover {
     transform: scale(1); }
 
 /******************************************************************

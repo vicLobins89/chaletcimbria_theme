@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	
 	viewport = updateViewportDimensions();
 	
-//	$('img.hover-zoom').parent().css('display', 'block');
+	$('img.hover-zoom').parent().addClass('hover-anchor');
 	
 	// Menu
 	$('.menu-button').on('click', function(){
