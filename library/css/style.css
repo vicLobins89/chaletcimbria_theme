@@ -600,7 +600,7 @@ Quick video guide:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.primary-btn, .wpcf7-form-control.wpcf7-submit, a.comment-reply-link, #submit, a.primary-btn, .secondary-btn, a.secondary-btn {
+.primary-btn, a.comment-reply-link, #submit, a.primary-btn, .secondary-btn, a.secondary-btn {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -620,35 +620,35 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media only screen and (max-width: 767px) {
-    .primary-btn, .wpcf7-form-control.wpcf7-submit, a.comment-reply-link, #submit, a.primary-btn, .secondary-btn, a.secondary-btn {
+    .primary-btn, a.comment-reply-link, #submit, a.primary-btn, .secondary-btn, a.secondary-btn {
       padding: 1rem; } }
-  .primary-btn:hover, .wpcf7-form-control.wpcf7-submit:hover, a.comment-reply-link:hover, #submit:hover, .secondary-btn:hover, .primary-btn:focus, .wpcf7-form-control.wpcf7-submit:focus, a.comment-reply-link:focus, #submit:focus, .secondary-btn:focus {
+  .primary-btn:hover, a.comment-reply-link:hover, #submit:hover, .secondary-btn:hover, .primary-btn:focus, a.comment-reply-link:focus, #submit:focus, .secondary-btn:focus {
     color: #fff;
     text-decoration: none; }
-  .primary-btn:active, .wpcf7-form-control.wpcf7-submit:active, a.comment-reply-link:active, #submit:active, .secondary-btn:active {
+  .primary-btn:active, a.comment-reply-link:active, #submit:active, .secondary-btn:active {
     top: 1px; }
-  .primary-btn a, .wpcf7-form-control.wpcf7-submit a, a.comment-reply-link a, #submit a, .secondary-btn a {
+  .primary-btn a, a.comment-reply-link a, #submit a, .secondary-btn a {
     color: inherit !important;
     text-decoration: inherit !important; }
-  .full.primary-btn, .full.wpcf7-form-control.wpcf7-submit, a.full.comment-reply-link, .full#submit, .full.secondary-btn {
+  .full.primary-btn, a.full.comment-reply-link, .full#submit, .full.secondary-btn {
     width: 100%; }
-  .half.primary-btn, .half.wpcf7-form-control.wpcf7-submit, a.half.comment-reply-link, .half#submit, .half.secondary-btn {
+  .half.primary-btn, a.half.comment-reply-link, .half#submit, .half.secondary-btn {
     width: 48%;
     margin-right: 4%; }
-    .half.primary-btn:last-child, .half.wpcf7-form-control.wpcf7-submit:last-child, a.half.comment-reply-link:last-child, .half#submit:last-child, .half.secondary-btn:last-child {
+    .half.primary-btn:last-child, a.half.comment-reply-link:last-child, .half#submit:last-child, .half.secondary-btn:last-child {
       margin-right: 0; }
 
-.primary-btn, .wpcf7-form-control.wpcf7-submit, a.comment-reply-link, #submit, a.primary-btn, a.wpcf7-form-control.wpcf7-submit, a.comment-reply-link, a#submit {
+.primary-btn, a.comment-reply-link, #submit, a.primary-btn, a.comment-reply-link, a#submit {
   background-color: #ff8700;
   border-color: #ff8700;
   color: #fff; }
-  .primary-btn:hover, .wpcf7-form-control.wpcf7-submit:hover, a.comment-reply-link:hover, #submit:hover, .primary-btn:focus, .wpcf7-form-control.wpcf7-submit:focus, a.comment-reply-link:focus, #submit:focus, a.primary-btn:hover, a.wpcf7-form-control.wpcf7-submit:hover, a.comment-reply-link:hover, a#submit:hover, a.primary-btn:focus, a.wpcf7-form-control.wpcf7-submit:focus, a.comment-reply-link:focus, a#submit:focus {
+  .primary-btn:hover, a.comment-reply-link:hover, #submit:hover, .primary-btn:focus, a.comment-reply-link:focus, #submit:focus, a.primary-btn:hover, a.comment-reply-link:hover, a#submit:hover, a.primary-btn:focus, a.comment-reply-link:focus, a#submit:focus {
     background-color: #fff;
     color: #ff8700; }
-  .primary-btn.alt, .alt.wpcf7-form-control.wpcf7-submit, a.alt.comment-reply-link, .alt#submit, a.primary-btn.alt, a.alt.wpcf7-form-control.wpcf7-submit, a.alt.comment-reply-link, a.alt#submit {
+  .primary-btn.alt, a.alt.comment-reply-link, .alt#submit, a.primary-btn.alt, a.alt.comment-reply-link, a.alt#submit {
     background-color: #808080;
     border-color: #808080; }
-    .primary-btn.alt:hover, .alt.wpcf7-form-control.wpcf7-submit:hover, a.alt.comment-reply-link:hover, .alt#submit:hover, .primary-btn.alt:focus, .alt.wpcf7-form-control.wpcf7-submit:focus, a.alt.comment-reply-link:focus, .alt#submit:focus, a.primary-btn.alt:hover, a.alt.wpcf7-form-control.wpcf7-submit:hover, a.alt.comment-reply-link:hover, a.alt#submit:hover, a.primary-btn.alt:focus, a.alt.wpcf7-form-control.wpcf7-submit:focus, a.alt.comment-reply-link:focus, a.alt#submit:focus {
+    .primary-btn.alt:hover, a.alt.comment-reply-link:hover, .alt#submit:hover, .primary-btn.alt:focus, a.alt.comment-reply-link:focus, .alt#submit:focus, a.primary-btn.alt:hover, a.alt.comment-reply-link:hover, a.alt#submit:hover, a.primary-btn.alt:focus, a.alt.comment-reply-link:focus, a.alt#submit:focus {
       background-color: #fff;
       color: #808080; }
 
@@ -662,6 +662,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   .secondary-btn:hover, .secondary-btn:focus, a.secondary-btn:hover, a.secondary-btn:focus {
     background-color: #ff8700;
     color: #1f2043; }
+  .secondary-btn.alt, a.secondary-btn.alt {
+    width: 50%;
+    border: 3px solid #ff8700;
+    font-weight: bold; }
 
 .primary-link {
   background: url(../images/link-arrow.png) no-repeat center left;
@@ -688,7 +692,6 @@ INPUTS
 *********************/
 #wpcf7-f257-p2-o1,
 #wpcf7-f257-p13-o1 {
-  background: #fff;
   padding: 1rem;
   width: 60%;
   height: 80%;
@@ -721,15 +724,22 @@ INPUTS
   #wpcf7-f257-p13-o1 form {
     width: 100%;
     margin: auto;
-    padding: 3rem;
+    padding: 3rem 3rem 0;
     background: #fff;
-    position: relative; }
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #999999; }
   #wpcf7-f257-p2-o1.active,
   #wpcf7-f257-p13-o1.active {
     z-index: 999;
     opacity: 1;
     visibility: visible; }
-  @media only screen and (min-width: 768 px) {
+  #wpcf7-f257-p2-o1 .dates,
+  #wpcf7-f257-p13-o1 .dates {
+    border: 3px solid #ff8700;
+    border-radius: 4px;
+    padding: 2rem; }
+  @media only screen and (min-width: 768px) {
     #wpcf7-f257-p2-o1 p.date-from, #wpcf7-f257-p2-o1 p.date-to,
     #wpcf7-f257-p13-o1 p.date-from,
     #wpcf7-f257-p13-o1 p.date-to {
@@ -765,17 +775,25 @@ INPUTS
   top: 10px;
   right: 10px;
   line-height: 1;
-  font-size: 0;
-  background-image: url(../images/menu-button.png);
-  background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: -31px 0;
-  width: 30px;
-  height: 27px;
-  color: transparent; }
+  color: #4c4c4c;
+  padding-right: 22px; }
+  .close-calendar:hover:before, .close-calendar:hover:after {
+    background: #ff8700; }
+  .close-calendar:before, .close-calendar:after {
+    content: '';
+    position: absolute;
+    background: #4c4c4c;
+    top: 8px;
+    right: 0;
+    width: 17px;
+    height: 2px; }
+  .close-calendar:before {
+    transform: rotate(45deg); }
+  .close-calendar:after {
+    transform: rotate(-45deg); }
 
 .wpcf7-form {
-  width: 80%;
+  width: 73%;
   margin: 2rem auto; }
   .wpcf7-form .your-consent {
     margin-bottom: 2rem;
@@ -783,6 +801,10 @@ INPUTS
   @media only screen and (max-width: 767px) {
     .wpcf7-form {
       width: 100%; } }
+  .wpcf7-form .wpcf7-list-item {
+    margin-left: 0; }
+  .wpcf7-form p {
+    margin: 1rem 0; }
 
 .wpcf7-form-control.wpcf7-submit {
   margin: auto;
@@ -790,7 +812,7 @@ INPUTS
 
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"]:not(#s), input[type="tel"], input[type="color"], select, textarea, .field {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 15px;
   margin: 0 auto 14px;
   font-size: 1em;
   font-weight: 400;
@@ -798,7 +820,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   vertical-align: middle;
   box-shadow: none;
   border: none;
-  width: 73%;
+  width: 100%;
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   background-color: #fff;
   -webkit-transition: background-color 0.24s ease-in-out;
@@ -850,7 +872,6 @@ input[type="password"] {
   letter-spacing: 0.3em; }
 
 textarea {
-  width: 100%;
   min-height: 100px;
   max-height: 140px; }
 
@@ -1074,13 +1095,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     margin-top: 0; }
 
 h1, .h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.2;
   margin-top: 0; }
 
 h2, .h2 {
-  font-size: 2.5em;
-  margin: .35em 0 .5em; }
+  font-size: 1.75em;
+  margin: .35em 0 .5em;
+  font-weight: bold; }
 
 h3, .h3 {
   font-size: 1.75em;
@@ -1355,7 +1377,7 @@ POSTS & CONTENT STYLES
         background: url(../images/icon-hot-tub.png) no-repeat bottom left; }
   .entry-content table {
     width: 100%;
-    border: 1px solid #4c4c4c;
+    border: none;
     margin-bottom: 1.5em; }
     .entry-content table caption {
       margin: 0 0 7px;
@@ -1373,8 +1395,12 @@ POSTS & CONTENT STYLES
     font-weight: bold; }
     .entry-content td:last-child {
       border-right: 0; }
-  .entry-content .tablepress tbody td, .entry-content .tablepress tfoot th {
+  .entry-content .tablepress tbody td,
+  .entry-content .tablepress tfoot th {
     border-top: none; }
+  .entry-content .tablepress .column-2,
+  .entry-content .tablepress .column-3 {
+    text-align: center; }
   .entry-content th {
     background-color: #e5e5e5; }
     .entry-content th:last-child {
@@ -1719,6 +1745,8 @@ CALENDAR
       .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-calendar .wpsbc-calendar-wrapper table tr td .wpsbc-legend-item-icon-3 + .wpsbc-date-inner .wpsbc-date-number,
       .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-calendar .wpsbc-calendar-wrapper table tr td .wpsbc-legend-item-icon-4 + .wpsbc-date-inner .wpsbc-date-number {
         opacity: 0.3; }
+    .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-calendar .wpsbc-calendar-wrapper table .wpsbc-gap {
+      display: none; }
   .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-legend {
     border: none;
     padding: 0 1.4em; }
@@ -1728,32 +1756,97 @@ CALENDAR
         display: none; }
     .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-legend .wpsbc-legend-item-icon {
       border: 1px solid #cccccc; }
+  .entry-content .wpsbc-container .wpsbc-calendars-wrapper .hint {
+    background: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 40%;
+    height: 200px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    top: calc(50% - 100px);
+    left: 50%;
+    margin-left: -20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    z-index: -10;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    z-index: -20;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+    border: 1px solid #999999; }
+    .entry-content .wpsbc-container .wpsbc-calendars-wrapper .hint.active {
+      visibility: visible;
+      opacity: 1;
+      z-index: 999; }
+    .entry-content .wpsbc-container .wpsbc-calendars-wrapper .hint a {
+      font-weight: normal;
+      font-size: 1rem; }
 
 /*********************
 SLIDER
 *********************/
-.is-mobile div#n2-ss-2-align,
-.is-mobile div#n2-ss-3-align {
-  margin-bottom: 147px; }
-div#n2-ss-2-align .nextend-thumbnail-default, div#n2-ss-2-align .nextend-thumbnail-inner, div#n2-ss-3-align .nextend-thumbnail-default, div#n2-ss-3-align .nextend-thumbnail-inner {
-  bottom: 3rem !important; }
-  .is-mobile div#n2-ss-2-align .nextend-thumbnail-default,
-  .is-mobile div#n2-ss-2-align .nextend-thumbnail-inner,
-  .is-mobile div#n2-ss-3-align .nextend-thumbnail-default,
-  .is-mobile div#n2-ss-3-align .nextend-thumbnail-inner {
-    position: relative !important;
-    bottom: 0 !important; }
-  div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div, div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div, div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div, div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div {
-    margin: 0;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-top: 4px solid #fff;
-    border-bottom: 4px solid #fff;
-    opacity: 1; }
-    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div:first-child, div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div:first-child, div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div:first-child, div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div:first-child {
-      border-left: 4px solid #fff; }
-    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div:last-child, div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div:last-child, div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller > div:last-child, div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller > div:last-child {
-      border-right: 4px solid #fff; }
+div#n2-ss-2-align .nextend-thumbnail-default,
+div#n2-ss-2-align .nextend-thumbnail-inner,
+div#n2-ss-3-align .nextend-thumbnail-default,
+div#n2-ss-3-align .nextend-thumbnail-inner {
+  bottom: 1rem !important; }
+  div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,
+  div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group,
+  div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,
+  div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group {
+    display: block !important;
+    width: 100% !important;
+    text-align: center; }
+    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+      display: inline-block !important;
+      height: 3rem !important;
+      margin: 0;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+      border-top: 4px solid #fff;
+      border-bottom: 4px solid #fff;
+      opacity: 1; }
+      div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div .n2-ss-thumb-image,
+      div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div .n2-ss-thumb-image,
+      div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div .n2-ss-thumb-image,
+      div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div .n2-ss-thumb-image {
+        width: 100% !important;
+        height: 100% !important; }
+      div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div:first-child,
+      div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div:first-child,
+      div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div:first-child,
+      div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div:first-child {
+        border-left: 4px solid #fff; }
+      div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div:last-child,
+      div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div:last-child,
+      div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div:last-child,
+      div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div:last-child {
+        border-right: 4px solid #fff; }
+  div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller,
+  div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller,
+  div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller,
+  div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller {
+    width: 100% !important;
+    display: inline-block !important; }
 
 /*********************
 LARGER MOBILE DEVICES
@@ -1772,18 +1865,6 @@ LARGER MOBILE DEVICES
   html {
     font-size: 13px; }
 
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-
-  /* end .menu */
   /*********************
   POSTS & CONTENT STYLES
   *********************/
@@ -1806,7 +1887,20 @@ LARGER MOBILE DEVICES
   /*********************
   FOOTER STYLES
   *********************/
-  /* end .footer-links */ }
+  /* end .footer-links */
+  /*********************
+  SLIDER STYLES
+  *********************/
+  div#n2-ss-2-align .nextend-thumbnail-default,
+  div#n2-ss-2-align .nextend-thumbnail-inner,
+  div#n2-ss-3-align .nextend-thumbnail-default,
+  div#n2-ss-3-align .nextend-thumbnail-inner {
+    bottom: 1rem !important; }
+    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+      height: 4rem !important; } }
 /*********************
 TABLET & SMALLER LAPTOPS
 *********************/
@@ -1915,7 +2009,9 @@ TABLET & SMALLER LAPTOPS
         .primary-nav > li > a br {
           display: block; }
         .primary-nav > li > a:hover, .primary-nav > li > a:focus {
-          color: #4c4c4c; }
+          color: #ff8700; }
+          .home .primary-nav > li > a:hover, .home .primary-nav > li > a:focus {
+            color: #fff; }
         .primary-nav > li > a.active {
           color: #4c4c4c;
           border-color: #1f2043 !important; }
@@ -2067,7 +2163,21 @@ TABLET & SMALLER LAPTOPS
       right: -3rem; }
   .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-legend {
     transform: scale(1.2);
-    transform-origin: left; } }
+    transform-origin: left; }
+
+  /*********************
+  SLIDER STYLES
+  *********************/
+  div#n2-ss-2-align .nextend-thumbnail-default,
+  div#n2-ss-2-align .nextend-thumbnail-inner,
+  div#n2-ss-3-align .nextend-thumbnail-default,
+  div#n2-ss-3-align .nextend-thumbnail-inner {
+    bottom: 1rem !important; }
+    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+      height: 5rem !important; } }
 /*********************
 DESKTOP
 *********************/
@@ -2151,7 +2261,21 @@ LARGE VIEWING SIZE
     .primary-nav > li.current-menu-item > a:after,
     .primary-nav > li.current_page_ancestor > a:after {
       left: 2.5em;
-      width: calc(100% - 5em); } }
+      width: calc(100% - 5em); }
+
+  /*********************
+  SLIDER STYLES
+  *********************/
+  div#n2-ss-2-align .nextend-thumbnail-default,
+  div#n2-ss-2-align .nextend-thumbnail-inner,
+  div#n2-ss-3-align .nextend-thumbnail-default,
+  div#n2-ss-3-align .nextend-thumbnail-inner {
+    bottom: 1rem !important; }
+    div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+    div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+      height: 7rem !important; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 *********************/

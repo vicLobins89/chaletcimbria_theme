@@ -16,7 +16,6 @@ INPUTS
 
 #wpcf7-f257-p2-o1,
 #wpcf7-f257-p13-o1 {
-	background: $white;
 	padding: 1rem;
 	width: 60%;
     height: 80%;
@@ -45,9 +44,11 @@ INPUTS
 	form {
 		width: 100%;
 		margin: auto;
-		padding: 3rem;
+		padding: 3rem 3rem 0;
 		background: #fff;
 		position: relative;
+		border-radius: 4px;
+		border: 1px solid lighten($black, 60%);
 	}
 	
 	&.active {
@@ -56,8 +57,14 @@ INPUTS
 		visibility: visible;
 	}
 	
+	.dates {
+		border: 3px solid $orange;
+		border-radius: 4px;
+		padding: 2rem;
+	}
+	
 	p.date-from, p.date-to {
-		@media only screen and (min-width: 768	px) {
+		@media only screen and (min-width: 768px) {
 			width: 49% !important;
 			display: inline-block;
 			margin: 0 1.4% 0 0;
@@ -93,18 +100,36 @@ INPUTS
     top: 10px;
     right: 10px;
 	line-height: 1;
-    font-size: 0;
-	background-image: url(../images/menu-button.png);
-	background-repeat: no-repeat;
-	background-size: 60px;
-    background-position: -31px 0;
-	width: 30px;
-	height: 27px;
-	color: transparent;
+	color: $text-color;
+	padding-right: 22px;
+	
+	&:hover:before,
+	&:hover:after {
+		background: $orange;
+	}
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		background: $text-color;
+		top: 8px;
+		right: 0;
+		width: 17px;
+		height: 2px;
+	}
+	
+	&:before {
+		transform: rotate(45deg);
+	}
+	
+	&:after {
+		transform: rotate(-45deg);
+	}
 }
 
 .wpcf7-form {
-	width: 80%;
+	width: 73%;
     margin: 2rem auto;
 	
 	.your-consent {
@@ -115,10 +140,17 @@ INPUTS
 	@media only screen and (max-width: 767px) {
 		width: 100%;
 	}
+	
+	.wpcf7-list-item {
+		margin-left: 0;
+	}
+	
+	p {
+		margin: 1rem 0;
+	}
 }
 
 .wpcf7-form-control.wpcf7-submit {
-	@extend .primary-btn;
 	margin: auto;
     display: block;
 }
@@ -142,7 +174,7 @@ select,
 textarea,
 .field {
 	display: block;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	margin: 0 auto 14px;
 	font-size: 1em;
 	font-weight: 400;
@@ -150,7 +182,7 @@ textarea,
 	vertical-align: middle;
 	box-shadow: none;
 	border: none;
-	width: 73%;
+	width: 100%;
 	font-family: $sans-serif;
 	background-color: $white;
 	@include transition(background-color 0.24s ease-in-out);
@@ -213,8 +245,7 @@ input[type="password"] {
 
 // textareas
 textarea {
-  width: 100%;
-  min-height: 100px;
+	min-height: 100px;
 	max-height: 140px;
 }
 

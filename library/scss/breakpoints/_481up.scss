@@ -14,49 +14,6 @@ html {
 	font-size: 13px;
 }
 
-
-/*********************
-NAVIGATION STYLES
-*********************/
-
-.nav {}
-
-	/* .menu is clearfixed inside mixins.scss */
-	.menu {
-		ul {
-			li {
-				a {
-					&:hover, &:focus {
-
-					}
-				}
-
-				&:first-child {}
-				&:last-child {}
-
-				ul.sub-menu,
-				ul.children {
-					li {
-						a {
-							&:hover,
-							&:focus {}
-							&:link {}
-						}
-						&:first-child {}
-						&:last-child {}
-					}
-				}
-			} /* end .menu ul li */
-
-			/* highlight current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}  /* end current highlighters */
-		} /* end .menu ul */
-	} /* end .menu */
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -93,3 +50,21 @@ FOOTER STYLES
 	}
 } /* end .footer-links */
 
+
+/*********************
+SLIDER STYLES
+*********************/
+
+div#n2-ss-2-align,
+div#n2-ss-3-align {
+	.nextend-thumbnail-default,
+	.nextend-thumbnail-inner {
+		bottom: 1rem !important;
+		
+		.nextend-thumbnail-scroller-group {	
+			> div {
+				height: 4rem !important;
+			}
+		}
+	}
+}

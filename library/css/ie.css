@@ -116,18 +116,6 @@ html {
   font-size: 13px; }
 
 /*********************
-NAVIGATION STYLES
-*********************/
-/* .menu is clearfixed inside mixins.scss */
-.menu {
-  /* end .menu ul */ }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-
-/* end .menu */
-/*********************
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
@@ -150,6 +138,20 @@ POSTS & CONTENT STYLES
 FOOTER STYLES
 *********************/
 /* end .footer-links */
+/*********************
+SLIDER STYLES
+*********************/
+div#n2-ss-2-align .nextend-thumbnail-default,
+div#n2-ss-2-align .nextend-thumbnail-inner,
+div#n2-ss-3-align .nextend-thumbnail-default,
+div#n2-ss-3-align .nextend-thumbnail-inner {
+  bottom: 1rem !important; }
+  div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+    height: 4rem !important; }
+
 /******************************************************************
 Site Name: Honey
 Author: Vic Lobins
@@ -254,7 +256,9 @@ NAVIGATION STYLES
       .primary-nav > li > a br {
         display: block; }
       .primary-nav > li > a:hover, .primary-nav > li > a:focus {
-        color: #4c4c4c; }
+        color: #ff8700; }
+        .home .primary-nav > li > a:hover, .home .primary-nav > li > a:focus {
+          color: #fff; }
       .primary-nav > li > a.active {
         color: #4c4c4c;
         border-color: #1f2043 !important; }
@@ -407,6 +411,20 @@ CALENDAR
 .entry-content .wpsbc-container .wpsbc-calendars-wrapper .wpsbc-legend {
   transform: scale(1.2);
   transform-origin: left; }
+
+/*********************
+SLIDER STYLES
+*********************/
+div#n2-ss-2-align .nextend-thumbnail-default,
+div#n2-ss-2-align .nextend-thumbnail-inner,
+div#n2-ss-3-align .nextend-thumbnail-default,
+div#n2-ss-3-align .nextend-thumbnail-inner {
+  bottom: 1rem !important; }
+  div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group > div,
+  div#n2-ss-3-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group > div {
+    height: 5rem !important; }
 
 /******************************************************************
 Site Name: Honey

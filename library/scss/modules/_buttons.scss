@@ -108,6 +108,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 		background-color: $orange;
 		color: $blue;
 	} // end hover// end active
+	
+	&.alt {
+		width: 50%;
+		border: 3px solid $orange;
+		font-weight: bold;
+	}
 }
 
 .primary-link {

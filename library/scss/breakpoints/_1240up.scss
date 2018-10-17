@@ -56,3 +56,22 @@ html {
 		}
 	}
 }
+
+
+/*********************
+SLIDER STYLES
+*********************/
+
+div#n2-ss-2-align,
+div#n2-ss-3-align {
+	.nextend-thumbnail-default,
+	.nextend-thumbnail-inner {
+		bottom: 1rem !important;
+		
+		.nextend-thumbnail-scroller-group {	
+			> div {
+				height: 7rem !important;
+			}
+		}
+	}
+}

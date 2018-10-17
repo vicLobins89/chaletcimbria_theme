@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
 	
 	viewport = updateViewportDimensions();
 	
+	
+	// Menu
 	$('.menu-button').on('click', function(){
 		$(this).parents('.header').toggleClass('active');
 	});
@@ -33,16 +35,24 @@ jQuery(document).ready(function($) {
 		$(this).next('.sub-menu').toggleClass('active');
 	});
 	
+	
+	// Calendar
 	$('.wpsbc-legend-item-icon-3 + .wpsbc-legend-item-name').text('Changeover');
+	
+	var $newEl = '<div class="hint">To request a booking, please use the button below.<a href="#" class="close-calendar">Close</a></div>';
+	$('.wpsbc-calendars').append($newEl);
+	$('.wpsbc-calendar-wrapper').on('click', function(){
+		$('.hint').toggleClass('active');
+	});
 	
 	$('.reveal-calendar').click(function(e){
 		e.preventDefault();
 		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1').addClass('active');
 	});
 	
-	$('.close-calendar').click(function(e){
+	$('.close-calendar').on('click', function(e){
 		e.preventDefault();
-		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1').removeClass('active');
+		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1, .hint').removeClass('active');
 	});
 	
 	$(window).on('resize load', function(){
@@ -51,6 +61,11 @@ jQuery(document).ready(function($) {
 		} else {
 			$('body').removeClass('is-mobile');
 		}
+		
+		$('.nextend-thumbnail-scroller-group > div').each(function() {
+			var total = (100 / $('.nextend-thumbnail-scroller-group > div').length);
+			$(this).css('width', 'calc('+total+'% - 8px)');
+		});
 	});
 	
 	$(window).on('scroll', function(){
