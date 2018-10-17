@@ -71,7 +71,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 } // end .button
 
 .primary-btn, a.primary-btn {
-	@extend %btn; // here we load the btn defaults
+	@extend %btn;
 	background-color: $orange;
 	border-color: $orange;
 	color: $white;
@@ -80,7 +80,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	&:focus {
 		background-color: $white;
 		color: $orange;
-	} // end hover// end active
+	}
 	
 	&.alt {
 		background-color: $meta-gray;
@@ -90,29 +90,32 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 		&:focus {
 			background-color: $white;
 			color: $meta-gray;
-		} // end hover// end active
+		}
 	}
 }
 
 .secondary-btn, a.secondary-btn {
-	@extend %btn; // here we load the btn defaults
-	background-color: transparent;
-	border-color: $blue;
-	color: $blue;
-	font-weight: normal;
-	padding: 1rem 3rem;
-	border-width: 1px;
+	@extend %btn;
+	background-color: $white;
+	border-color: $meta-gray;
+	color: $meta-gray;
 
 	&:hover,
 	&:focus {
-		background-color: $orange;
-		color: $blue;
-	} // end hover// end active
+		background-color: $meta-gray;
+		color: $white;
+	}
 	
 	&.alt {
 		width: 50%;
 		border: 3px solid $orange;
 		font-weight: bold;
+		
+		&:hover,
+		&:focus {
+			background-color: $orange;
+			color: $white;
+		}
 	}
 }
 

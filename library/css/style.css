@@ -653,19 +653,19 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
       color: #808080; }
 
 .secondary-btn, a.secondary-btn {
-  background-color: transparent;
-  border-color: #1f2043;
-  color: #1f2043;
-  font-weight: normal;
-  padding: 1rem 3rem;
-  border-width: 1px; }
+  background-color: #fff;
+  border-color: #808080;
+  color: #808080; }
   .secondary-btn:hover, .secondary-btn:focus, a.secondary-btn:hover, a.secondary-btn:focus {
-    background-color: #ff8700;
-    color: #1f2043; }
+    background-color: #808080;
+    color: #fff; }
   .secondary-btn.alt, a.secondary-btn.alt {
     width: 50%;
     border: 3px solid #ff8700;
     font-weight: bold; }
+    .secondary-btn.alt:hover, .secondary-btn.alt:focus, a.secondary-btn.alt:hover, a.secondary-btn.alt:focus {
+      background-color: #ff8700;
+      color: #fff; }
 
 .primary-link {
   background: url(../images/link-arrow.png) no-repeat center left;
