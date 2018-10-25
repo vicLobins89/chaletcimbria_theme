@@ -462,9 +462,6 @@ html {
     left: 1.5em;
     width: calc(100% - 3em); }
 
-.image-links-wrapper > div {
-  padding: 1rem 4rem; }
-
 .footer-links ul li {
   margin: 0 2rem; }
 

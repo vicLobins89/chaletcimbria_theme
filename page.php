@@ -19,10 +19,36 @@
 
 							<?php // MAIN CONTENT ?>
 							<?php if( get_the_content() ) : ?>
-								<section class="entry-content cf top" itemprop="articleBody">
-									<?php the_content(); ?>
+								<section class="row entry-content cf top<?php if( get_field('wrap') ) { echo ' wrap'; } ?>" itemprop="articleBody">
+									<div class="cf"><div class="col-12">
+										<?php the_content(); ?>
+									</div></div>
 								</section>
 							<?php endif; ?>
+								
+								
+							<?php // IMAGE LINKS ?>
+							<?php if( have_rows('image_links') ) : ?>
+								<section class="row entry-content image-links-wrapper cf"
+										 <?php echo (get_field('img_links_background') ? ' style="background:'.get_field('img_links_background').'"' : ''); ?>>
+									<div class="cf">
+									<?php
+										if( get_field('img_links_title') ) {
+											echo '<h2>'.get_field('img_links_title').'</h2>';
+										}
+									?>
+									<?php while( have_rows('image_links') ): the_row(); ?>
+										<div class="col-3">
+											<a href="<?php the_sub_field('link'); ?>" class="image-links">
+												<img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('text'); ?>">
+												<p><?php the_sub_field('text'); ?></p>
+											</a>
+										</div>
+									<?php endwhile; ?>
+									</div>
+								</section>
+							<?php endif; ?>
+							
 
 							<?php // COLUMNS CONTENT ?>
 							<?php if( have_rows('rows') ): $rowNum = 0; ?>
@@ -129,27 +155,6 @@
 								<?php endwhile; ?>
 							<?php endif; ?>
 							
-							<?php // IMAGE LINKS ?>
-							<?php if( have_rows('image_links') ) : ?>
-								<section class="row entry-content image-links-wrapper cf"
-										 <?php echo (get_field('img_links_background') ? ' style="background:'.get_field('img_links_background').'"' : ''); ?>>
-									<div class="cf">
-									<?php
-										if( get_field('img_links_title') ) {
-											echo '<h2>'.get_field('img_links_title').'</h2>';
-										}
-									?>
-									<?php while( have_rows('image_links') ): the_row(); ?>
-										<div class="col-4">
-											<a href="<?php the_sub_field('link'); ?>" class="image-links">
-												<img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('text'); ?>">
-												<p><?php the_sub_field('text'); ?></p>
-											</a>
-										</div>
-									<?php endwhile; ?>
-									</div>
-								</section>
-							<?php endif; ?>
 
 							<?php // PRE-FOOTER ?>
 							<?php if( get_field('pre_footer') ) : ?>
