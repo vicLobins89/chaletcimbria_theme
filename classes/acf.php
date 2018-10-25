@@ -1,6 +1,7 @@
 <?php
 class CustomACF {
-    function image_links() { ?>
+    function image_links() {
+		if( have_rows('image_links') ) : ?>
 		<section class="row entry-content image-links-wrapper cf"
 				 <?php echo (get_field('img_links_background') ? ' style="background:'.get_field('img_links_background').'"' : ''); ?>>
 			<div class="cf">
@@ -19,9 +20,11 @@ class CustomACF {
 			<?php endwhile; ?>
 			</div>
 		</section>
-	<?php }
+		<?php endif;
+	}
 	
 	function page_rows() {
+		if( have_rows('rows') ) :
 		$rowNum = 0;
 		while( have_rows('rows') ) : the_row();
 			
@@ -126,8 +129,20 @@ class CustomACF {
 		<?php endif; ?>
 
 		</section>
-
-	<?php endwhile; ?>
+		<?php endwhile; endif;
+	}
+	
+	function pre_footer() { ?>
+		<section class="pre-footer row cf">
+			<div class="max-width cf wrap">
+				<?php if( get_field('pre_footer_media') ) : ?>
+					<div class="col-6"><?php the_field('pre_footer_media') ?></div>
+					<div class="col-6"><?php the_field('pre_footer') ?></div>
+				<?php else : ?>
+					<div class="col-12"><?php the_field('pre_footer') ?></div>
+				<?php endif; ?>
+			</div>
+		</section>
 	<?php }
 }
 

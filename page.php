@@ -29,12 +29,10 @@ $class = new CustomACF();
 									</div></div>
 								</section>
 							<?php endif; ?>
-								
+							
 								
 							<?php // IMAGE LINKS ?>
-							<?php if( have_rows('image_links') ) : ?>
-								<?php $class->image_links(); ?>
-							<?php endif; ?>
+							<?php $class->image_links(); ?>
 							
 
 							<?php // COLUMNS CONTENT ?>
@@ -45,16 +43,7 @@ $class = new CustomACF();
 
 							<?php // PRE-FOOTER ?>
 							<?php if( get_field('pre_footer') ) : ?>
-								<section class="pre-footer row cf">
-									<div class="max-width cf wrap">
-										<?php if( get_field('pre_footer_media') ) : ?>
-											<div class="col-6"><?php the_field('pre_footer_media') ?></div>
-											<div class="col-6"><?php the_field('pre_footer') ?></div>
-										<?php else : ?>
-											<div class="col-12"><?php the_field('pre_footer') ?></div>
-										<?php endif; ?>
-									</div>
-								</section>
+								<?php $class->pre_footer(); ?>
 							<?php endif; ?>
 
 							</article>
