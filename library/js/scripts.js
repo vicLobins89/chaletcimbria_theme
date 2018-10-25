@@ -51,9 +51,14 @@ jQuery(document).ready(function($) {
 		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1').addClass('active');
 	});
 	
-	$('.close-calendar').on('click', function(e){
+	$('.reveal-features').click(function(e){
 		e.preventDefault();
-		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1, .hint').removeClass('active');
+		$('.full-features').addClass('active');
+	});
+	
+	$('.close-overlay').on('click', function(e){
+		e.preventDefault();
+		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1, .hint, .features').removeClass('active');
 	});
 	
 	$(window).on('resize load', function(){

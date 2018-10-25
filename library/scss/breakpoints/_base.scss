@@ -657,6 +657,10 @@ POSTS & CONTENT STYLES
 	font-size: 0;
 }
 
+.full-features {
+	@extend %overlay;
+}
+
 .page-title {
 	font-size: .8rem;
 	z-index: 100;
