@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 	// Calendar
 	$('.wpsbc-legend-item-icon-3 + .wpsbc-legend-item-name').text('Changeover');
 	
-	var $newEl = '<div class="hint">To request a booking, please use the button below.<a href="#" class="close-calendar">Close</a></div>';
+	var $newEl = '<div class="hint">To request a booking, please use the button below.<a href="#" class="close-overlay">Close</a></div>';
 	$('.wpsbc-calendars').append($newEl);
 	$('.wpsbc-calendar-wrapper').on('click', function(){
 		$('.hint').toggleClass('active');

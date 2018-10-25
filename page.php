@@ -20,7 +20,6 @@ $class = new CustomACF();
 								<?php the_post_thumbnail('full'); ?>
 							</div>
 							<?php endif; ?>
-							
 
 							<?php // MAIN CONTENT ?>
 							<?php if( get_the_content() ) : ?>
@@ -30,7 +29,6 @@ $class = new CustomACF();
 									</div></div>
 								</section>
 							<?php endif; ?>
-							
 							
 							<?php // ACF FIELDS ?>
 							<?php
@@ -42,7 +40,6 @@ $class = new CustomACF();
 								$class->image_links();
 							}
 							?>
-							
 
 							<?php // PRE-FOOTER ?>
 							<?php $class->pre_footer(); ?>
