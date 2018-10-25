@@ -34,8 +34,7 @@ $class = new CustomACF();
 							
 							<?php // ACF FIELDS ?>
 							<?php
-							$imgLinksPos = get_field('img_links_pos');
-							if( $imgLinksPos === 'top' ) {
+							if( get_field('img_links_pos') === 'top' ) {
 								$class->image_links();
 								$class->page_rows();
 							} else {
