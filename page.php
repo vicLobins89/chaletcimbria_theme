@@ -38,7 +38,7 @@
 										}
 									?>
 									<?php while( have_rows('image_links') ): the_row(); ?>
-										<div class="col-3">
+										<div class="col-3"<?php if( get_field('img_links_title') ) { echo ' style="width: calc(100% / '.get_field('img_links_title').')"' ; } ?>>
 											<a href="<?php the_sub_field('link'); ?>" class="image-links">
 												<img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('text'); ?>">
 												<p><?php the_sub_field('text'); ?></p>
