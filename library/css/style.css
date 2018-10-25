@@ -1300,6 +1300,9 @@ POSTS & CONTENT STYLES
   overflow: hidden;
   font-size: 0; }
 
+.full-features {
+  background: #fff; }
+
 .page-title {
   font-size: .8rem;
   z-index: 100; }
@@ -1364,6 +1367,10 @@ POSTS & CONTENT STYLES
       -webkit-columns: 2;
       -moz-columns: 2;
       columns: 2; }
+    .entry-content .list.list-3col {
+      -webkit-columns: 3;
+      -moz-columns: 3;
+      columns: 3; }
     .entry-content .list.list-icons {
       font-size: 1.1rem; }
       .entry-content .list.list-icons li {

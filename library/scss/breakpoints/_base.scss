@@ -659,6 +659,7 @@ POSTS & CONTENT STYLES
 
 .full-features {
 	@extend %overlay;
+	background: $white;
 }
 
 .page-title {
@@ -761,6 +762,10 @@ POSTS & CONTENT STYLES
 		
 		&.list-2col {
 			@include prefix(columns, 2, webkit moz);
+		}
+		
+		&.list-3col {
+			@include prefix(columns, 3, webkit moz);
 		}
 		
 		&.list-icons {

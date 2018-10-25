@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 	
 	$('.close-overlay').on('click', function(e){
 		e.preventDefault();
-		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1, .hint, .features').removeClass('active');
+		$('#wpcf7-f257-p2-o1, #wpcf7-f257-p13-o1, .hint, .full-features').removeClass('active');
 	});
 	
 	$(window).on('resize load', function(){
