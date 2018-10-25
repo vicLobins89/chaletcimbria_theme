@@ -108,7 +108,7 @@ hr {
 		padding: 0;
 	}
 	
-	form {
+	form, div:not(.screen-reader-response) {
 		width: 100%;
 		margin: auto;
 		padding: 3rem 3rem 0;
@@ -659,7 +659,10 @@ POSTS & CONTENT STYLES
 
 .full-features {
 	@extend %overlay;
-	background: $white;
+	
+	> div {
+		background: $white;
+	}
 }
 
 .page-title {

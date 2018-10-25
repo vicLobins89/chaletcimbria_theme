@@ -886,7 +886,8 @@ hr {
       top: 0;
       padding: 0; } }
   #wpcf7-f257-p2-o1 form,
-  #wpcf7-f257-p13-o1 form, .full-features form {
+  #wpcf7-f257-p13-o1 form, .full-features form, #wpcf7-f257-p2-o1 div:not(.screen-reader-response),
+  #wpcf7-f257-p13-o1 div:not(.screen-reader-response), .full-features div:not(.screen-reader-response) {
     width: 100%;
     margin: auto;
     padding: 3rem 3rem 0;
@@ -1300,7 +1301,7 @@ POSTS & CONTENT STYLES
   overflow: hidden;
   font-size: 0; }
 
-.full-features {
+.full-features > div {
   background: #fff; }
 
 .page-title {
