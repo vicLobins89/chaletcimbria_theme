@@ -20,6 +20,7 @@ $class = new CustomACF();
 								<?php the_post_thumbnail('full'); ?>
 							</div>
 							<?php endif; ?>
+							
 
 							<?php // MAIN CONTENT ?>
 							<?php if( get_the_content() ) : ?>
@@ -30,21 +31,22 @@ $class = new CustomACF();
 								</section>
 							<?php endif; ?>
 							
-								
-							<?php // IMAGE LINKS ?>
-							<?php $class->image_links(); ?>
 							
-
-							<?php // COLUMNS CONTENT ?>
-							<?php if( have_rows('rows') ) : ?>
-								<?php $class->page_rows(); ?>
-							<?php endif; ?>
+							<?php // ACF FIELDS ?>
+							<?php
+							$imgLinksPos = get_field('img_links_pos');
+							if( $imgLinksPos === 'top' ) {
+								$class->image_links();
+								$class->page_rows();
+							} else {
+								$class->page_rows();
+								$class->image_links();
+							}
+							?>
 							
 
 							<?php // PRE-FOOTER ?>
-							<?php if( get_field('pre_footer') ) : ?>
-								<?php $class->pre_footer(); ?>
-							<?php endif; ?>
+							<?php $class->pre_footer(); ?>
 
 							</article>
 

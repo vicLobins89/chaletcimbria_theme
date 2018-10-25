@@ -132,7 +132,8 @@ class CustomACF {
 		<?php endwhile; endif;
 	}
 	
-	function pre_footer() { ?>
+	function pre_footer() {
+		if( get_field('pre_footer') ) : ?>
 		<section class="pre-footer row cf">
 			<div class="max-width cf wrap">
 				<?php if( get_field('pre_footer_media') ) : ?>
@@ -143,7 +144,8 @@ class CustomACF {
 				<?php endif; ?>
 			</div>
 		</section>
-	<?php }
+		<?php endif;
+	}
 }
 
 $class = new CustomACF();
