@@ -39,7 +39,7 @@ $class = new CustomACF();
 
 							<?php // COLUMNS CONTENT ?>
 							<?php if( have_rows('rows') ) : ?>
-								<?php page_rows(); ?>
+								<?php $class->page_rows(); ?>
 							<?php endif; ?>
 							
 
