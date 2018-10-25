@@ -28,7 +28,8 @@
 								
 								
 							<?php // IMAGE LINKS ?>
-							<?php if( have_rows('image_links') ) : ?>
+							<?php
+							function image_links() { ?>
 								<section class="row entry-content image-links-wrapper cf"
 										 <?php echo (get_field('img_links_background') ? ' style="background:'.get_field('img_links_background').'"' : ''); ?>>
 									<div class="cf">
@@ -47,6 +48,11 @@
 									<?php endwhile; ?>
 									</div>
 								</section>
+							<?php
+						   	} ?>
+								
+							<?php if( have_rows('image_links') ) : ?>
+								image_links();
 							<?php endif; ?>
 							
 
