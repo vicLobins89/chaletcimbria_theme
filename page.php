@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<?php
+require_once('classes/acf.php');
+$class = new CustomACF();
+$class->showConstant();
+?>
 
 			<div id="content">
 
