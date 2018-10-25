@@ -52,7 +52,7 @@
 						   	} ?>
 								
 							<?php if( have_rows('image_links') ) : ?>
-								image_links();
+								<?php image_links(); ?>
 							<?php endif; ?>
 							
 
