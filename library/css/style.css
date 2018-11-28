@@ -1085,6 +1085,11 @@ LAYOUT & GRID STYLES
   padding: 2.75rem; }
 .ski-facts [class*="col-"] {
   padding: 0; }
+.ski-facts p {
+  margin: .75rem 0; }
+  .ski-facts p .skill {
+    display: inline-block;
+    min-width: 130px; }
 
 /*********************
 LINK STYLES

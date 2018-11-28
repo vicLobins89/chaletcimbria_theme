@@ -382,6 +382,15 @@ LAYOUT & GRID STYLES
 	[class*="col-"] {
 		padding: 0;
 	}
+	
+	p {
+		margin: .75rem 0;
+		
+		.skill {
+			display: inline-block;
+    		min-width: 130px;
+		}
+	}
 }
 
 /*********************
