@@ -32,6 +32,7 @@ class CustomACF {
 		$layout = get_sub_field('layout');
 		$padding = get_sub_field('padding');
 		$bgColour = get_sub_field('bg_colour');
+		$customClass = get_sub_field('class');
 		$addClasses = array();
 		$addStyles = array();
 		$styles;
@@ -41,6 +42,10 @@ class CustomACF {
 			if( $padding[padding_right] ) { array_push($addStyles, "padding-right: $padding[padding_right];"); }
 			if( $padding[padding_bottom] ) { array_push($addStyles, "padding-bottom: $padding[padding_bottom];"); }
 			if( $padding[padding_left] ) { array_push($addStyles, "padding-left: $padding[padding_left];"); }
+		}
+		
+		if( $customClass ) {
+			array_push($addClasses, $customClass);
 		}
 		
 		array_push($addClasses, "row-$rowNum");
