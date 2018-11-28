@@ -372,8 +372,16 @@ LAYOUT & GRID STYLES
 }
 
 .ski-facts {
-	background: url(/wp-content/uploads/2018/11/ski-facts-bg.jpg) no-repeat center;
-	background-size: cover;
+	> div {
+		background: url(/wp-content/uploads/2018/11/ski-facts-bg.jpg) no-repeat center;
+		background-size: cover;
+		color: $white;
+		padding: 2.75rem;
+	}
+	
+	[class*="col-"] {
+		padding: 0;
+	}
 }
 
 /*********************
