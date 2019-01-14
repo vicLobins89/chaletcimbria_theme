@@ -330,6 +330,27 @@ LAYOUT & GRID STYLES
 	}
 }
 
+.thumbs-inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	@include prefix(flex-wrap, wrap, webkit ms);
+	
+	.col-3 {
+		float: none;
+		
+		.m320 & {
+			width: 100% !important;
+		}
+		
+		.m768 & {
+			width: 50% !important;
+		}
+	}
+}
+
 .image-links {
 	display: block;
 	background: $white;

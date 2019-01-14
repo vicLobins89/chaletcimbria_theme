@@ -1048,6 +1048,22 @@ LAYOUT & GRID STYLES
 .image-links-wrapper h2 {
   margin-left: 1rem; }
 
+.thumbs-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .thumbs-inner .col-3 {
+    float: none; }
+    .m320 .thumbs-inner .col-3 {
+      width: 100% !important; }
+    .m768 .thumbs-inner .col-3 {
+      width: 50% !important; }
+
 .image-links {
   display: block;
   background: #fff;

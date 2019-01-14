@@ -19,7 +19,23 @@ jQuery(document).ready(function($) {
 	
 	"use strict";
 	
+	function responsive_resize() {
+		var current_width = $(window).width();
+		//do something with the width value here!
+		if(current_width < 481) {
+			$('html').addClass("m320").removeClass("m768").removeClass("desktop").removeClass("m480");
+		} else if(current_width < 768) {
+			$('html').addClass("m768").removeClass("desktop").removeClass("m320").removeClass("tablet");
+		} else if (current_width < 1030) {
+			$('html').addClass("tablet").removeClass("desktop").removeClass("m320").removeClass("m768");
+		} else if (current_width >= 1030) {
+			$('html').addClass("desktop").removeClass("m320").removeClass("m768").removeClass("tablet");
+		}
+	}
+	
 	viewport = updateViewportDimensions();
+	
+	responsive_resize();
 	
 	$('img.hover-zoom').parent().addClass('hover-anchor');
 	
@@ -72,6 +88,10 @@ jQuery(document).ready(function($) {
 			var total = (100 / $('.nextend-thumbnail-scroller-group > div').length);
 			$(this).css('width', 'calc('+total+'% - 8px)');
 		});
+	});
+	
+	$(window).resize(function(){
+		responsive_resize();
 	});
 	
 	$(window).on('scroll', function(){
