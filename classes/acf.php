@@ -13,7 +13,7 @@ class CustomACF {
 				<div class="thumbs-inner">
 				<?php while( have_rows('image_links') ): the_row(); ?>
 					<div class="col-3"<?php echo ' style="width: calc(100% / '.get_field('img_links_col').')"' ; ?>>
-						<a href="<?php the_sub_field('link'); ?>" class="image-links">
+						<a target="_blank" href="<?php the_sub_field('link'); ?>" class="image-links">
 							<?php 
 							$image = get_sub_field('image');
 							$size = 'image-links';
