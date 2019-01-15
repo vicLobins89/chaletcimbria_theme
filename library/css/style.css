@@ -1896,6 +1896,12 @@ div#n2-ss-3-align .nextend-thumbnail-default,
 div#n2-ss-3-align .nextend-thumbnail-inner {
   bottom: 1rem !important;
   height: auto !important; }
+  @media only screen and (max-width: 767px) {
+    div#n2-ss-2-align .nextend-thumbnail-default,
+    div#n2-ss-2-align .nextend-thumbnail-inner,
+    div#n2-ss-3-align .nextend-thumbnail-default,
+    div#n2-ss-3-align .nextend-thumbnail-inner {
+      display: none !important; } }
   div#n2-ss-2-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,
   div#n2-ss-2-align .nextend-thumbnail-inner .nextend-thumbnail-scroller-group,
   div#n2-ss-3-align .nextend-thumbnail-default .nextend-thumbnail-scroller-group,

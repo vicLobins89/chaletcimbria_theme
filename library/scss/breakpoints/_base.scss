@@ -1532,6 +1532,9 @@ div#n2-ss-3-align {
 	.nextend-thumbnail-inner {
 		bottom: 1rem !important;
 		height: auto !important;
+		@media only screen and (max-width: 767px) {
+			display: none !important;
+		}
 		
 		.nextend-thumbnail-scroller-group {
 			display: block !important;
